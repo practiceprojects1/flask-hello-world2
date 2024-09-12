@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #111211;
+    background-color: #366634;
     margin: 0;
     padding: 0;
     color: #587558;
@@ -10,7 +10,7 @@ h1 {
     color: #34eb37;
     text-align: center;
     padding: 20px;
-    background-color: ##111211;
+    background-color: #111211;
     border-bottom: 2px solid #0056b3;
 }
 
@@ -24,7 +24,7 @@ p {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #366634;
+    background-color: #111211;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     margin-top: 50px;
