@@ -15,7 +15,7 @@ app = Flask(__name__)
 def home():
     global test
     test1=print(test)
-    return render_template('index2.html', test2=test)
+    return render_template('index2.html', test2=str(test))
     
 
 if __name__ == '__main__':
