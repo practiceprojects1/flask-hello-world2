@@ -4,7 +4,7 @@ test = ""
 
 def test():
     global test
-    test = test+"test"
+    test = test+"testTESTTESTTEST"
 
 
 
