@@ -11,6 +11,10 @@ def home():
     global test
     test1 = test
     return render_template('index3.html', test2=test1)
+
+@app.route('/iocdatabase')
+def database():
+    return "This is the database location"
     
 
 if __name__ == '__main__':
