@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+import textile
 
 test = ""
 
@@ -13,8 +14,9 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     global test
-    test1=html(test)
-    return render_template('index2.html', test2=test1)
+    test1=test
+    html = textile.textile(test1)
+    return render_template('index2.html', test2=html)
     
 
 if __name__ == '__main__':
