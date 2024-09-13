@@ -21,7 +21,7 @@ body {
 .context h1 {
     text-align: center;
     color: #fefefe;
-    font-size: 150px;
+    font-size: 100px;
 }
 
 .context h3 {
@@ -32,7 +32,7 @@ body {
 
 
 .area {
-    background: #000428;
+    background: #174508;
     background: -webkit-linear-gradient(to right, #000428, #004e92);
     background: linear-gradient(to right, #000428, #004e92);
     width: 100%;
