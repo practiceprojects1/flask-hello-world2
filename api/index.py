@@ -13,7 +13,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     global test
-    test1=return(test)
+    test1=html(test)
     return render_template('index2.html', test2=test1)
     
 
