@@ -14,8 +14,8 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     global test
-    test1= "What about this?"
-    return render_template('index2.html', test2=str(test1))
+    test1= "What about this one?"
+    return render_template('index2.html', test2=test1)
     
 
 if __name__ == '__main__':
