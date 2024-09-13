@@ -16,7 +16,7 @@ def home():
     global test
     test1=test
     html = test1.textile()
-    return render_template('index2.html', test2=html)
+    return render_template('index2.html', test2=test)
     
 
 if __name__ == '__main__':
