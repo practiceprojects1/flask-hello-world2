@@ -13,7 +13,8 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     global test
-    return render_template('index2.html', test1=test)
+    test1=print(test)
+    return render_template('index2.html', test2=test1)
     
 
 if __name__ == '__main__':
