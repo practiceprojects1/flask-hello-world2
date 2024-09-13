@@ -3,11 +3,6 @@ import textile
 
 test = "is this working"
 
-def test():
-    global test
-    #test = test+"testTESTTESTTEST"
-
-
 
 app = Flask(__name__)
 
@@ -19,5 +14,4 @@ def home():
     
 
 if __name__ == '__main__':
-    test()
     app.run(debug=True)
