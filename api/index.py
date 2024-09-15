@@ -101,7 +101,6 @@ def convert_to_html():
    for x in data1:
     url = re.search(url_pattern, x)
     url = str(url).replace("<p>","")
-    print("URL:" + url)
 
 
 
@@ -110,52 +109,11 @@ def convert_to_html():
       #x1 = "<a href=" + x1 + ">" + "</a>"
 
 
-if __name__ == "__main__":
-  url1()
-  url2()
-  convert_to_html()
-  print("Intel Gathered...\n\nConverted to html.....\n\n")
-
-  with open('intel.txt', 'w') as f:
-    f.write(data1)
-    f.close()
-    print("intel.txt created....\n\n")
-
 
 ######### Add reformat html code here ##########
 
 
 # Make all of the links clickable
-def process_file1(input_file, output_file):
-    # Define the regex pattern to find URLs surrounded by <p> and </p>
-    pattern = re.compile(r'<p>(http[s]?://[^\s]+)</p>')
-
-    # Read the content of the file
-    with open(input_file, 'r') as file:
-        content = file.read()
-
-    # Replace <p> and </p> with HTML anchor tags
-    updated_content = pattern.sub(r'<a href="\1">\1</a>', content)
-
-    # Write the updated content back to the file
-    with open(output_file, 'w') as file:
-        file.write(updated_content)
-
-# Specify your input and output file paths
-input_file_path = 'intel.txt'   # Change this to your actual input file path
-output_file_path = 'final.txt' # Change this to your desired output file path
-
-# Call the function to process the file
-process_file1(input_file_path, output_file_path)
-
-
-print("final.txt Updated")
-
-
-with open('final.txt', 'r') as f:
-  data2 = f.read()
-  f.close()
-  print("final.txt read....\n\n")
 
 ###########END TEST############
 
@@ -165,7 +123,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     global test
-    global data2
+    global data1
     test1 = test
     return render_template('index3.html', test2=test1)
 
@@ -175,4 +133,7 @@ def database():
     
 
 if __name__ == '__main__':
-    app.run(debug=True)
+  url1()
+  url2()
+  convert_to_html()
+  app.run(debug=True)
