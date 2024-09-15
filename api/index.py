@@ -94,10 +94,6 @@ def url2():
         data1 = data1 + "\n\n\n\n" + data
 
 
-def convert_to_html():
-   global data1
-   url_pattern = r'http[s]?://[^\s]+'
-   data1 = textile.textile(data1)
 
 
 
@@ -132,5 +128,4 @@ def database():
 if __name__ == '__main__':
   url1()
   url2()
-  convert_to_html()
   app.run(debug=True)
