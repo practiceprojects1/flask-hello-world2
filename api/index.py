@@ -125,7 +125,7 @@ def home():
     global test
     global data1
     test1 = test
-    return render_template('index3.html', test2=test1)
+    return render_template('index3.html', test2=data1)
 
 @app.route('/iocdatabase')
 def database():
