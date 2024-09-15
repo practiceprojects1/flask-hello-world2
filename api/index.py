@@ -98,9 +98,6 @@ def convert_to_html():
    global data1
    url_pattern = r'http[s]?://[^\s]+'
    data1 = textile.textile(data1)
-   for x in data1:
-    url = re.search(url_pattern, x)
-    url = str(url).replace("<p>","")
 
 
 
