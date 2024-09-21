@@ -115,10 +115,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
+    data2 = "test"
     global test
     global data1
     test1 = test
-    return render_template('index3.html', test2=data1)
+    return render_template('index3.html', test2=data2)
 
 @app.route('/iocdatabase')
 def database():
