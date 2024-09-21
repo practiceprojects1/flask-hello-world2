@@ -115,7 +115,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    data2 = "test"
+    data2 = print(data1)
     global test
     global data1
     test1 = test
